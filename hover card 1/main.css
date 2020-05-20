@@ -1,0 +1,135 @@
+body{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	font-family: "Poppins",sans-serif;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.container{
+	display: flex;
+	justify-content: space-between;
+}
+.container .box{
+	margin: 50px;
+	position:relative;
+    width: 250px;
+    height:300px;
+    padding: 10px;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,.5) ;
+    border-radius: 4px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.container .box .content
+{
+	margin-top: 60px;
+	position: relative;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	text-align: center;
+	font-size: 20px;
+	color: #000;
+	transition: .5s;
+	z-index: 3;
+}
+.container .box:hover .content
+{
+	color:#fff;
+}
+.container .box:before{
+    content: '';
+	width: 50%;
+	position:absolute;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(255,255,255,.2);
+	z-index: 2;
+}
+.container .box .icon
+{
+	position: relative;
+	height: 60px;
+	width: 60px;
+	color: #fff;
+	display: flex ;
+	font-size: 35px;
+	font-weight: 600;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin: 0 auto;
+	border-radius: 50%;
+	background: black;
+	transition: 1s;
+}
+.container .box .content a{
+	padding: 5px; 
+	border-radius: 5px;
+	background: #fff;
+	text-decoration: none;
+	color: black;
+	box-shadow: 0 0 5px rgba(0,0,0,.5);
+}
+.container .box:nth-child(1) .icon{
+	box-shadow: 0 0 0 0 #661ee9;
+	background: #661ee9;
+}
+.container .box:nth-child(1):hover .icon{
+	box-shadow: 0 0 0 200px #661ee9;
+	background: #661ee9;
+	transition: 1s;
+}
+.container .box:nth-child(2) .icon{
+	box-shadow: 0 0 0 0 #e91e63;
+	background: #e91e63;
+}
+.container .box:nth-child(2):hover .icon{
+	box-shadow: 0 0 0 200px #e91e63;
+	background: #e91e63;
+	transition: 1s;
+}
+.container .box:nth-child(3) .icon{
+	box-shadow: 0 0 0 0 #1ee963;
+	background: #1ee963;
+}
+.container .box:nth-child(3):hover .icon{
+	box-shadow: 0 0 0 200px #1ee963;
+	background: #1ee963;
+	transition: 1s;
+}
+.circle:nth-child(1){
+	content:'';
+	margin: -400px;
+	height: 700px;
+	width: 700px;
+	position: absolute;
+	background:rgba(100,100,100,.5);
+	border-radius: 50%; 
+}
+.circle:nth-child(2){
+	content:'';
+	margin-top: 200px ;
+	margin-left:300px;
+	height: 300px;
+	width: 300px;
+	position: absolute;
+	background:rgba(255,100,100,.7);
+	border-radius: 50%; 
+}
+.circle:nth-child(3){
+	content:'';
+	margin-top: -250px;
+	margin-left: 200px;
+	height: 100px;
+	width: 100px;
+	position: absolute;
+	background:rgba(70,255,70,.7);
+	border-radius: 50%; 
+}
