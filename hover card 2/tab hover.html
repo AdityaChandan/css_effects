@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <style type="text/css">
+    	*{
+    		margin:0;
+    		padding: 0;
+    	}
+    	body{
+    		margin: 200px 0 0 0;
+    		padding: 0px;
+    		display: flex;
+    		justify-content: space-between;
+    		align-content: center;
+    		font-family: sans-serif;
+    		background: rgb(10,10,10);
+    	}
+    
+    	.container,.container2{
+    		position: relative;
+    		width: 50%;
+    		justify-content: center;
+    		display: flex;
+    		align-content: center;    		
+    	}
+    	.container h1,.container2 h1{
+    		margin: 0px;
+    		line-height: 200px;
+    		opacity: .5;
+    	}
+    	.container p,.container2 p{
+    		margin:0px;
+    		line-height: 200px;
+    		position: absolute;
+    		opacity:0;
+    	}
+    	.box1,.box2,.box3,.box4{
+    		height:200px;width:200px;
+    		position: absolute;
+    		display: flex;
+    		justify-content: center;
+    	}
+    	.container .box1{
+    		transform: skew(5deg,5deg);
+    		background-color: #ff6eff;
+    		box-shadow: 0 0 5px #ff6eff;
+    	}
+    	.container2 .box3{
+    		transform: skew(5deg,5deg);
+    		background-color: #0f0;
+    		box-shadow: 0 0 5px #0f0;
+    	}
+    	.container .box2,.container2 .box4{
+    		background-image: linear-gradient( to right,#111 50%,#222 50%);
+    		border-radius: 4px;
+    		color: white ;
+    	}
+    	.container .box2:hover h1,.container2 .box4:hover h1{
+    		transform: translateY(-40px);
+    		cursor: pointer;
+    		opacity: 1;
+    		transition: .6s;
+    	}
+    	.container .box2:hover p,.container2 .box4:hover p{
+    		opacity:1;
+    		transition: .6s;
+    		cursor: pointer;
+    		transform: translateY(20px);
+    	}
+    	.container .box2:hover h1{
+    		text-shadow: 0 0 4px #ff6eff;
+    	}
+    	.container2 .box4:hover h1{
+    		text-shadow: 0 0 4px #0f0;
+    	}
+		.container .box2:hover p{
+			color: #ff6eff;
+		}
+		.container2 .box4:hover p{
+			color: #0f0;
+		}
+		a{
+			margin-top: -180px;
+			padding: 0;
+			display: block;
+		}
+    </style>
+	<title>css styling</title>
+</head>
+<body >
+	<div class="container">
+		<div class="box1">
+		</div>
+		<div class="box2">
+			<h1>Hello</h1>
+			<p>for more<a href="#"> click here</a></p><br>
+		</div>
+    </div>
+    <div class="container2" >
+		<div class="box3">
+		</div>
+		<div class="box4">
+			<h1>world</h1>
+			<p>for more<a href="#"> click here</a></p><br>
+		</div>
+    </div>
+</body>
+</html>
