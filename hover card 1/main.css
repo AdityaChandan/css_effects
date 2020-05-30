@@ -133,3 +133,25 @@ body{
 	background:rgba(70,255,70,.7);
 	border-radius: 50%; 
 }
+
+@media (max-width: 956px){
+	body{
+		overflow: auto;
+	}
+.container{
+	display: inline;
+}
+.container .box{
+	float:left;
+	display: block;
+	margin: 50px;
+    width: 250px;
+    height:300px;
+    padding: 10px;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,.5) ;
+    border-radius: 4px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+}
